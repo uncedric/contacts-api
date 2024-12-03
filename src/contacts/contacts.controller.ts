@@ -7,6 +7,7 @@ import {
   Param,
   Delete,
   HttpCode,
+  Put,
 } from '@nestjs/common';
 import { ContactsService } from './contacts.service';
 import { CreateContactDto } from './dto/create-contact.dto';
@@ -32,7 +33,7 @@ export class ContactsController {
     return this.contactsService.findOne(+id);
   }
 
-  @Patch(':id')
+  @Put(':id')
   update(@Param('id') id: string, @Body() updateContactDto: UpdateContactDto) {
     return this.contactsService.update(+id, updateContactDto);
   }

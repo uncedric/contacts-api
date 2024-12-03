@@ -56,7 +56,7 @@
       {
         "name": "Update Contact",
         "request": {
-          "method": "PATCH",
+          "method": "PUT",
           "header": [
             { "key": "Content-Type", "value": "application/json" }
           ],

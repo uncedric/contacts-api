@@ -2,7 +2,7 @@
 
 ## Approach
 - use nest to autogenerate code
-- use copilot for enhanced autocomple 
+- use copilot for enhanced autocomplete 
 - use chatgpt to generate postman collection based on controller code
 
 ## Bonus features
@@ -49,3 +49,12 @@ docker-compose up
 ```
 This will start the application within a container, ensuring a consistent environment across different machines.
 
+## Example request object
+```json
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "phone": "1234567890"
+}
+```
